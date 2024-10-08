@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="zodiaccss.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodiac Signs</title>
+</head>
+
+<body>
+
+    <div class="bg">
+
+        <header class="header">
+            <img src="IMG/Black Hole.jpg" class="logo"></a>
+    
+            </nav>
+        </header>
+
+            <h1>ZODIAC SIGNS</h1>
+            <label for="birthdate">Enter your birthdate:</label>
+        <input type="date" id="birthdate">
+        <button onclick="findZodiacSign()">Find Zodiac Sign</button>
+        <p id="result"></p>
+    
+    </div>
+
+    <div class="bg2">
+
+        <p id="result2"></p>
+    
+    </div>
+
+    <div class="bg3">
+        <h1>Zodiac Symbol</h1>
+        <h2>Element</h2>
+        <h3>Ruling Planet</h3>
+        <h4>Fall</h4>
+        <h5>Birthstones</h5>
+        <h6>Personality</h6>
+
+        <p id="result3"></p>
+    
+    </div>
+
+    <div class="bg4">
+        <h1>Zodiac Symbol</h1>
+        <h2>Element</h2>
+        <h3>Ruling Planet</h3>
+        <h4>Fall</h4>
+        <h5>Birthstones</h5>
+        <h6>Personality</h6>
+
+        <p id="result4"></p>
+    
+    </div>
+
+    <div class="bg5">
+        <h1>Zodiac Symbol</h1>
+        <h2>Element</h2>
+        <h3>Ruling Planet</h3>
+        <h4>Fall</h4>
+        <h5>Birthstones</h5>
+        <h6>Personality</h6>
+
+        <p id="result5"></p>
+    
+    </div>
+
+    <div class="bg6">
+        <h1>Zodiac Symbol</h1>
+        <h2>Element</h2>
+        <h3>Ruling Planet</h3>
+        <h4>Fall</h4>
+        <h5>Birthstones</h5>
+        <h6>Personality</h6>
+
+        <p id="result6"></p>
+    
+    </div>
+
+    <div class="bg7">
+        <h1>Zodiac Symbol</h1>
+        <h2>Element</h2>
+        <h3>Ruling Planet</h3>
+        <h4>Fall</h4>
+        <h5>Birthstones</h5>
+        <h6>Personality</h6>
+
+        <p id="result7"></p>
+    
+    </div>
+
+    <div class="bg8">
+        <h1>Zodiac Symbol</h1>
+        <h2>Element</h2>
+        <h3>Ruling Planet</h3>
+        <h4>Fall</h4>
+        <h5>Birthstones</h5>
+        <h6>Personality</h6>
+
+        <p id="result8"></p>
+    
+    </div>
+
+    <div class="bg9">
+
+        <p id="result9"></p>
+    
+    </div>
+
+
+    <script>
+        function findZodiacSign() {
+            const dateInput = document.getElementById('birthdate').value;
+            if (!dateInput) {
+                document.getElementById('result').innerText = "Please enter a valid date.";
+                return;
+            }
+
+            const birthDate = new Date(dateInput);
+            const month = birthDate.getUTCMonth() + 1; // Months are 0-based
+            const day = birthDate.getUTCDate();
+
+            let zodiacSign = '';
+
+            if ((month === 1 && day >= 20) || (month === 2 && day <= 18)) {
+                zodiacSign = 'AQUARIUS';
+                definition = 'Aquarius is the eleventh astrological sign in the zodiac, originating \n from the constellation Aquarius. Under the tropical zodiac, the \n Sun is in the Aquarius sign between about January 20 and February 18. \n  Aquarius is one of the three air signs, alongside Gemini and Libra.';
+                symbol = 'Water-Bearer'
+                element = 'Air';
+                rullingplanet = 'Uranus';
+                fall = 'Pluto';
+                birthstones = 'Amethyst, Garnet, Opal, \n Sugilite, Jasper, Moss agate';
+                personality = 'Clever, analytical, technical, truthful, assertive, confident, progressive and innovative.';
+                exactdate = 'January 20 to February 18';
+            } else if ((month === 2 && day >= 19) || (month === 3 && day <= 20)) {
+                zodiacSign = 'PISCES';
+                definition = 'Pisces is the twelfth and final astrological sign in the zodiac. It \n is a mutable sign. It spans 330° to 360° of celestial longitude. \n Under the tropical zodiac, the sun transits this area between \n about February 19 and March 20.';
+                symbol = 'Fish'
+                element = 'Water';
+                rullingplanet = 'Neptune';
+                fall = 'Mercury';
+                birthstones = 'Aquamarine';
+                personality = 'Highly creative and imaginative, Walker reports, as well as compassionate and loving.';
+                exactdate = 'February 19 to March 20';
+            } else if ((month === 3 && day >= 21) || (month === 4 && day <= 19)) {
+                zodiacSign = 'ARIES';
+                definition = 'Aries is the first astrological sign in the zodiac, spanning the first \n 30 degrees of celestial longitude, and originates from the Aries \n constellation. Under the tropical zodiac, the Sun transits \n this sign from approximately March 21 to April 19 each year.';
+                symbol = 'Ram'
+                element = 'Fire';
+                rullingplanet = 'Mars';
+                fall = 'Saturn';
+                birthstones = 'Heliotrope, Sapphire, \n Jasper, Topaz,';
+                personality = 'Passionate, motivated, and confident leader';
+                exactdate = 'March 21 to April 19';
+            } else if ((month === 4 && day >= 20) || (month === 5 && day <= 20)) {
+                zodiacSign = 'TAURUS';
+                definition = 'Taurus is the second astrological sign in the modern zodiac. It spans \n from 30° to 60° of the zodiac. This sign belongs to the Earth element \n or triplicity, as well as a fixed modality, quality, or \n quadruplicity. It is a Venus-ruled sign, the Moon is in its \n exaltation here at exactly 3°.';
+                symbol = 'Bull'
+                element = 'Earth';
+                rullingplanet = 'Venus';
+                fall = 'Uranus';
+                birthstones = ' Emerald, Diamond, \n Sapphire, Garnet,';
+                personality = 'Graceful and diligent laborers';
+                exactdate = 'April 20 to May 20';
+            } else if ((month === 5 && day >= 21) || (month === 6 && day <= 20)) {
+                zodiacSign = 'GEMINI';
+                definition = 'Gemini is the third astrological sign in the zodiac. Under the tropical \n zodiac, the sun transits this sign between about May 21 to June 21. \n Gemini is represented by the twins, Castor and Pollux, known \n as the Dioscuri in Greek mythology. It is known as a positive, \n mutable sign.';
+                symbol = 'Twin'
+                element = 'Air';
+                rullingplanet = 'Gemini';
+                fall = 'South Node';
+                birthstones = 'Pearl';
+                personality = 'Playful and intellectually curious';
+                exactdate = 'May 21 to June 20';
+            } else if ((month === 6 && day >= 21) || (month === 7 && day <= 22)) {
+                zodiacSign = 'CANCER';
+                definition = 'Cancer is the fourth astrological sign in the zodiac, originating from \n the constellation of Cancer. It spans from 90° to 120° celestial \n longitude. Under the tropical zodiac, the Sun transits this \n area between approximately June 21 and July 22.';
+                symbol = 'Crab'
+                element = 'Water';
+                rullingplanet = 'Moon';
+                fall = 'Mars';
+                birthstones = 'Ruby';
+                personality = 'Nurturing and loyal';
+                exactdate = 'June 21 to July 22';
+            } else if ((month === 7 && day >= 23) || (month === 8 && day <= 22)) {
+                zodiacSign = 'LEO';
+                definition = 'Leo is the fifth sign of the zodiac. It corresponds to the constellation \n Leo and comes after Cancer and before Virgo. The traditional \n Western zodiac associates Leo with the period between about \n July 23 and August 22, and the sign spans the 120th to 150th degree \n of celestial longitude.';
+                symbol = 'Lion'
+                element = 'Fire';
+                rullingplanet = 'Sun';
+                fall = 'Neptune';
+                birthstones = 'Peridot';
+                personality = 'Compassion and big-heartedness, consciousness, drive, and natural leadership.';
+                exactdate = 'July 23 to August 22';
+            } else if ((month === 8 && day >= 23) || (month === 9 && day <= 22)) {
+                zodiacSign = 'VIRGO';
+                definition = 'Virgo is the sixth astrological sign in the zodiac. It spans \n the 150–180th degree of the zodiac. Under the tropical zodiac, the Sun \n transits this area between August 23 and September 22 on average. \n Depending on the system of astrology, individuals born during these dates \n may be called Virgos or Virgoans.';
+                symbol = 'Maiden'
+                element = 'Earth';
+                rullingplanet = 'Mercury';
+                fall = 'Venus';
+                birthstones = 'Sapphire';
+                personality = 'Logical, practical, and systematic in their approach to life.';
+                exactdate = 'August 23 to September 22';
+            } else if ((month === 9 && day >= 23) || (month === 10 && day <= 22)) {
+                zodiacSign = 'LIBRA';
+                definition = 'Libra is the seventh astrological sign in the zodiac. It spans \n 180°–210°  celestial longitude. The Sun transits this sign on average\n  between September 23 and October 23. The symbol of the scales \n is based on the Scales of Justice held by Themis, the Greek personification \n of divine law and custom.';
+                symbol = 'Scales'
+                element = 'Air';
+                rullingplanet = 'Venus';
+                fall = 'Sun';
+                birthstones = 'Opal';
+                personality = 'Extremely agreeable and honest people who believe strongly in the importance of social connections.';
+                exactdate = 'September 23 to October 22';
+            } else if ((month === 10 && day >= 23) || (month === 11 && day <= 21)) {
+                zodiacSign = 'SCORPIO';
+                definition = 'Scorpio is the eighth astrological sign in the zodiac, originating \n from the constellation of Scorpius. It spans 210–240° ecliptic \n longitude. Under the tropical zodiac, the Sun transits this sign \n on average from October 23 to November 21.';
+                symbol = 'Scorpion'
+                element = 'Water';
+                rullingplanet = 'Mars, Pluto';
+                fall = 'Moon';
+                birthstones = 'Topaz';
+                personality = 'Single-minded in their pursuit of their objectives, which they set high';
+                exactdate = 'October 23 to November 21.';
+            } else if ((month === 11 && day >= 22) || (month === 12 && day <= 21)) {
+                zodiacSign = 'SAGITTARIUS';
+                definition = 'Sagittarius is the ninth astrological sign, which is associated \n with the constellation Sagittarius and spans 240–270th degrees \n of the zodiac. Under the tropical zodiac, the sun transits this sign \n between approximately November 22 and December 21.';
+                symbol = 'Archer'
+                element = 'Fire';
+                rullingplanet = 'Jupiter';
+                fall = 'North Node, Ceres';
+                birthstones = 'Turquoise, Topaz, \n Citrine, Tanzanite';
+                personality = 'Extremely empathic and understanding';
+                exactdate = 'November 22 to December 21';
+            } else {
+                zodiacSign = 'CAPRICORN';
+                definition = 'Capricorn is the tenth astrological sign in the zodiac out of twelve \n total zodiac signs, originating from the constellation of \n Capricornus, the goat. It spans the 270–300th degree of the zodiac, \n corresponding to celestial longitude.';
+                symbol = 'Sea-Goat'
+                element = 'Earth';
+                rullingplanet = 'Saturn';
+                fall = 'Jupiter';
+                birthstones = 'Garnet';
+                personality = 'Decisive thinkers';
+                exactdate = 'December 22 to January 19';
+            }
+
+            document.getElementById('result').innerText = `${zodiacSign}`;
+            document.getElementById('result2').innerText = `${definition}`;
+            document.getElementById('result3').innerText = `${symbol}`;
+            document.getElementById('result4').innerText = `${element}`;
+            document.getElementById('result5').innerText = `${rullingplanet}`;
+            document.getElementById('result6').innerText = `${fall}`;
+            document.getElementById('result7').innerText = `${birthstones}`;
+            document.getElementById('result8').innerText = `${personality}`;
+            document.getElementById('result9').innerText = `${exactdate}`;
+
+        }
+
+    </script>
+</body>
+</html>
+    

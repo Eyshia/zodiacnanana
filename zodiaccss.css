@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.bg{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-image: url(https://i.pinimg.com/originals/62/12/48/6212485181ca055f760855d98d3ee4bc.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fixed;
+    color: #fff;
+    padding: 0 8%;
+    position: absolute;
+}
+.header{
+    position: fixed;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100%;
+}
+.logo{
+        width: 200px;
+        cursor: pointer;
+        position: absolute;
+        top: 120%;
+        left: 3%;
+}
+.bg h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: rgb(215, 15, 255);
+    line-height: 1.2;
+    position: absolute;
+    left: 13%;
+    top: 5%;
+}
+.bg input{
+    font-size: 25px;
+    font-weight: 700;
+    position: fixed;
+    color: rgb(0, 0, 0);
+    top: 18%;
+    left: 18%;
+    border: 2px solid rgb(215, 15, 255);
+    border-radius: 8px;
+}
+.bg button{
+    font-size: 25px;
+    font-weight: 700;
+    position: fixed;
+    color: rgb(0, 0, 0);
+    top: 18%;
+    left: 31%;
+    border: 2px solid rgb(215, 15, 255);
+    border-radius: 8px;
+}
+.bg button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0, 132, 184);
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+}
+.bg button:hover::before{
+    background: rgb(215, 15, 255);
+    width: 100%;
+}
+.bg label{
+    font-size: 25px;
+    font-weight: 700;
+    position: fixed;
+    color: rgb(255, 255, 255);
+    top: 18%;
+    left: 4%;
+}
+.bg p{
+    font-size: 55px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(255, 255, 255);
+    top: 10%;
+    left: 13%;
+
+}
+.bg2 p{
+    font-size: 18px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(255, 255, 255);
+    top: 31%;
+    left: 5%;
+}
+.bg3 p{
+    font-size: 25px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(255, 255, 255);
+    top: 50%;
+    left: 7.5%;
+}
+.bg3 h1{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 45%;
+    left: 7%;
+}
+.bg3 h2{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 45%;
+    left: 25%;
+}
+.bg3 h3{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 60%;
+    left: 7%;
+}
+.bg3 h4{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 60%;
+    left: 25%;
+}
+.bg3 h5{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 72%;
+    left: 7%;
+}
+.bg3 h6{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 82%;
+    left: 7%;
+}
+.bg4 p{
+    font-size: 25px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(255, 255, 255);
+    top: 50%;
+    left: 25%;
+}
+.bg4 h1{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 45%;
+    left: 7%;
+}
+.bg4 h2{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 45%;
+    left: 25%;
+}
+.bg4 h3{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 60%;
+    left: 7%;
+}
+.bg4 h4{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 60%;
+    left: 25%;
+}
+.bg4 h5{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 72%;
+    left: 7%;
+}
+.bg4 h6{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 82%;
+    left: 7%;
+}
+.bg5 p{
+    font-size: 25px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(255, 255, 255);
+    top: 65%;
+    left: 7.5%;
+}
+.bg5 h1{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 45%;
+    left: 7%;
+}
+.bg5 h2{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 45%;
+    left: 25%;
+}
+.bg5 h3{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 60%;
+    left: 7%;
+}
+.bg5 h4{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 60%;
+    left: 25%;
+}
+.bg5 h5{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 72%;
+    left: 7%;
+}
+.bg5 h6{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 82%;
+    left: 7%;
+}
+.bg6 p{
+    font-size: 25px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(255, 255, 255);
+    top: 65%;
+    left: 25%;
+}
+.bg6 h1{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 45%;
+    left: 7%;
+}
+.bg6 h2{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 45%;
+    left: 25%;
+}
+.bg6 h3{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 60%;
+    left: 7%;
+}
+.bg6 h4{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 60%;
+    left: 25%;
+}
+.bg6 h5{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 72%;
+    left: 7%;
+}
+.bg6 h6{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 82%;
+    left: 7%;
+}
+.bg7 p{
+    font-size: 25px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(255, 255, 255);
+    top: 75%;
+    left: 7.5%;
+}
+.bg7 h1{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 45%;
+    left: 7%;
+}
+.bg7 h2{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 45%;
+    left: 25%;
+}
+.bg7 h3{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 60%;
+    left: 7%;
+}
+.bg7 h4{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 60%;
+    left: 25%;
+}
+.bg7 h5{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 72%;
+    left: 7%;
+}
+.bg7 h6{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 82%;
+    left: 7%;
+}
+.bg8 p{
+    font-size: 25px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(255, 255, 255);
+    top: 85%;
+    left: 7.5%;
+}
+.bg8 h1{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 45%;
+    left: 7%;
+}
+.bg8 h2{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 45%;
+    left: 25%;
+}
+.bg8 h3{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 60%;
+    left: 7%;
+}
+.bg8 h4{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 60%;
+    left: 25%;
+}
+.bg8 h5{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 72%;
+    left: 7%;
+}
+.bg8 h6{
+    font-size: 20px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(215, 15, 255);
+    top: 82%;
+    left: 7%;
+}
+.bg9 p{
+    font-size: 30px;
+    font-weight: 750;
+    position: fixed;
+    color: rgb(255, 255, 255);
+    top: 24%;
+    left: 10%;
+}
+.script{
+    position: fixed;
+    top: 20%;
+}
